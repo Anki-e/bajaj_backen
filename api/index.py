@@ -1,6 +1,8 @@
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 import os
 app = Flask(__name__)
+CORS(app)
 
 def extract_data(input_data):
     numbers = []
